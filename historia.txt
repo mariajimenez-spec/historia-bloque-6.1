@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bloque 6 Historia Andalucía (1833–1874) — Visual y completo</title>
+<style>
+  :root{
+    --bg:#f8e9ef;        /* rosa palo de fondo */
+    --card:#fff5f8;      /* paneles claros */
+    --border:#f2cbd8;    /* rosa suave */
+    --accent:#d16d8a;    /* frambuesa suave */
+    --accent2:#b55b79;
+    --text:#3a2e33;
+    --muted:#7a6670;
+    --good:#2e7d32;
+    --bad:#b00020;
+    --note:#6b7280;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text)}
+  header{position:sticky;top:0;background:#fff0f5; border-bottom:1px solid var(--border); z-index:10}
+  nav{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;padding:.75rem 1rem}
+  nav a{text-decoration:none;color:var(--text);border:1px solid var(--border);padding:.45rem .7rem;border-radius:999px;background:#fff;transition:.2s}
+  nav a:hover{border-color:var(--accent);color:var(--accent)}
+  main{max-width:1100px;margin:0 auto;padding:1rem}
+  h1,h2,h3{line-height:1.25;margin:.25rem 0}
+  p{margin:.5rem 0}
+  section{margin:1rem 0;padding:1rem;border:1px solid var(--border);background:var(--card);border-radius:14px}
+  .grid{display:grid;gap:1rem}
+  .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{border:1px solid var(--border);background:#fff;border-radius:14px;padding:1rem}
+  .badge{display:inline-block;padding:.2rem .5rem;border-radius:999px;border:1px solid var(--border);color:var(--muted);font-size:.8rem;background:#fff0f5}
+  .pill{display:inline-block;background:#ffeaf1;border:1px solid var(--border);color:var(--text);padding:.2rem .55rem;border-radius:999px;font-size:.8rem;margin:.1rem .2rem}
+  .btn{display:inline-flex;align-items:center;gap:.4rem;background:#fff;border:1px solid var(--border);color:var(--text);padding:.5rem .8rem;border-radius:10px;cursor:pointer}
+  .btn:hover{border-color:var(--accent);color:var(--accent)}
+  .btn.primary{background:#ffeaf1;border-color:#f2cbd8}
+  .muted{color:var(--muted)}
+  details{border:1px dashed var(--border);border-radius:12px;padding:.6rem .8rem;background:#fff}
+  summary{cursor:pointer}
+  .list{margin:.5rem 0;padding-left:1rem}
+  .list li{margin:.25rem 0}
+  .q{padding:.6rem;border:1px solid var(--border);border-radius:10px;background:#fff;margin:.5rem 0}
+  .rubric{border-left:3px solid var(--accent);padding:.5rem .75rem;background:#fff0f5}
+  .model{border-left:3px solid var(--accent2);padding:.5rem .75rem;background:#fff5f8}
+  .timeline{position:relative;margin:.5rem 0}
+  .timeline::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:var(--border)}
+  .t-item{position:relative;margin-left:1.5rem;margin-bottom:.6rem}
+  .t-item::before{content:"";position:absolute;left:-2px;top:.2rem;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--accent)}
+  .t-year{font-weight:600;color:var(--accent)}
+  .t-body{color:var(--text)}
+  .mcq{border:1px solid var(--border);border-radius:12px;padding:.75rem;background:#fff;margin:.5rem 0}
+  .mcq .opt{margin:.25rem 0;padding:.45rem;border-radius:8px;border:1px solid var(--border);cursor:pointer;background:#fff}
+  .mcq .opt.correct{border-color:#9fd3a9;background:#f0fff2}
+  .mcq .opt.wrong{border-color:#f5a3b1;background:#fff2f5}
+  .score{padding:.5rem;border:1px solid var(--border);border-radius:10px;background:#fff;margin-top:.5rem}
+  .draggable{border:1px dashed var(--border);border-radius:10px;padding:.5rem;background:#fff;cursor:grab}
+  .dropzone{min-height:48px;border:2px dotted var(--accent);border-radius:10px;padding:.5rem;background:#fff0f5;margin:.4rem 0}
+  .pair{display:flex;gap:.75rem;align-items:flex-start;margin:.5rem 0}
+  .inputRow{display:flex;gap:.5rem;align-items:center;margin:.3rem 0}
+  .inputRow input[type=text]{flex:1;padding:.5rem;border:1px solid var(--border);border-radius:8px}
+  .ok{color:var(--good)}
+  .ko{color:var(--bad)}
+  footer{padding:1.5rem;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="#flashcards">Flashcards</a>
+    <a href="#tests">Tests por apartados y personajes</a>
+    <a href="#writing">Preguntas de respuesta escrita</a>
+    <a href="#timeline">Línea del tiempo</a>
+    <a href="#constituciones">Unir constituciones con rasgos y leyes</a>
+    <a href="#personajes">Relacionar personajes con su historia</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Bloque 6: Estado liberal y Sexenio (1833–1874)</h1>
+  <p class="muted">Diseño rosa palo, visual y completo. Contiene todas las secciones solicitadas, con preguntas orientadas a Selectividad (Andalucía).</p>
+
+  <!-- FLASHCARDS -->
+  <section id="flashcards">
+    <h2>Flashcards de todos los apartados</h2>
+    <p class="muted">Pulsa cada tarjeta para desplegar conceptos clave. Cubre todos los subapartados del documento.</p>
+    <div id="fc-container" class="grid cols-3"></div>
+  </section>
+
+  <!-- TESTS -->
+  <section id="tests">
+    <h2>Tests por bloques y personajes (60+ preguntas)</h2>
+    <p class="muted">Tipo test agrupados por apartados (Bloque 6 I-II) y por personajes, con corrección inmediata.</p>
+
+    <div class="card">
+      <h3>Bloque 6 (I): 1833–1843 — Estatuto Real, 1836–1837, Reforma agraria, Carlistas, Espartero</h3>
+      <div id="mcq-bloque1"></div>
+    </div>
+
+    <div class="card">
+      <h3>Bloque 6 (I): 1843–1868 — Década Moderada, Bienio Progresista, Unión Liberal, Crisis y Gloriosa</h3>
+      <div id="mcq-bloque2"></div>
+    </div>
+
+    <div class="card">
+      <h3>Bloque 6 (II): 1868–1874 — Gobierno Provisional, 1869, Amadeo I, I República, Serrano</h3>
+      <div id="mcq-bloque3"></div>
+    </div>
+
+    <div class="card">
+      <h3>Personajes: políticos y militares (fechas, acciones, contexto)</h3>
+      <div id="mcq-personajes"></div>
+    </div>
+
+    <div class="score" id="mcq-score">Puntuación: 0 / 0</div>
+    <div class="grid cols-2">
+      <button class="btn" onclick="resetAllMCQ()">Reiniciar tests</button>
+      <span class="pill">Tip: compara constituciones, crisis y actores clave por periodo.</span>
+    </div>
+  </section>
+
+  <!-- WRITING RESPONSES -->
+  <section id="writing">
+    <h2>Preguntas de respuesta escrita (con autocorrección por claves)</h2>
+    <p class="muted">Escribe en frases breves. Se detectan palabras clave esenciales para puntuar (orientativo, no sustituye la corrección humana).</p>
+    <div id="writing-list" class="card"></div>
+    <div class="score" id="writing-score">Respuestas correctas (claves detectadas): 0 / 10</div>
+    <button class="btn" onclick="resetWriting()">Reiniciar escritas</button>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline">
+    <h2>Línea del tiempo 1833–1874</h2>
+    <p class="muted">Eventos clave por año, útiles para ordenar procesos y comentar cronologías en examen.</p>
+    <div id="timeline-list" class="timeline"></div>
+  </section>
+
+  <!-- MATCH CONSTITUTIONS -->
+  <section id="constituciones">
+    <h2>Unir constituciones con sus características y leyes</h2>
+    <p class="muted">Arrastra cada rasgo/ley a la constitución correspondiente. Cubre 1837, 1845 y 1869.</p>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Constituciones</h3>
+        <div id="const-dropzones"></div>
+      </div>
+      <div class="card">
+        <h3>Rasgos y leyes a arrastrar</h3>
+        <div id="const-draggables"></div>
+        <div class="grid cols-2">
+          <button class="btn primary" onclick="checkConst()">Comprobar</button>
+          <button class="btn" onclick="resetConst()">Reiniciar</button>
+        </div>
+        <div class="score" id="const-score">Aciertos: 0 / 12</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATCH PERSONAJES -->
+  <section id="personajes">
+    <h2>Relacionar personajes con su historia</h2>
+    <p class="muted">Arrastra la ficha de cada personaje al resumen correcto (qué hicieron, fechas y papel).</p>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Personajes</h3>
+        <div id="pers-draggables"></div>
+      </div>
+      <div class="card">
+        <h3>Resumen de historia</h3>
+        <div id="pers-dropzones"></div>
+        <div class="grid cols-2">
+          <button class="btn primary" onclick="checkPers()">Comprobar</button>
+          <button class="btn" onclick="resetPers()">Reiniciar</button>
+        </div>
+        <div class="score" id="pers-score">Aciertos: 0 / 12</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>¿Quieres que la publique online y te deje el enlace listo? Puedo prepararte GitHub Pages si lo deseas.</p>
+  </footer>
+</main>
+
+<script>
+/* ===========================
+   Datos derivados del documento
+   =========================== */
+
+/* Flashcards: cubrir todos los apartados del documento */
+const flashcards = [
+  // 0 Introducción
+  {q:"Introducción (1833): contexto y división ideológica", a:"Muerte de Fernando VII; regencia de María Cristina; absolutistas vs liberales; moderados y progresistas con proyectos distintos."},
+  // 1 Estatuto Real
+  {q:"Estatuto Real (1834): naturaleza", a:"Carta otorgada por la Corona; no reconoce la soberanía nacional; moderniza el absolutismo con Cortes consultivas."},
+  {q:"Estatuto Real: estructura y sufragio", a:"Estamento de Próceres (designación real, vitalicio); Procuradores (sufragio indirecto restringido, ~16.000 electores)."},
+  {q:"Javier de Burgos: división provincial", a:"Reforma administrativa: 49 provincias, base del Estado centralizado."},
+  {q:"Crisis social 1834", a:"Cólera y rumores; asaltos a conventos; violencia anticlerical."},
+  // 2 Revolución 1836 y Constitución 1837
+  {q:"Motín de La Granja (1836)", a:"Sargentos fuerzan giro progresista; restablecimiento del espíritu constitucional."},
+  {q:"Constitución de 1837: rasgos", a:"Soberanía nacional; bicameralismo (Congreso censitario directo, Senado nombrado por el rey); derechos; división de poderes."},
+  {q:"Medidas: exclaustración, diezmo, imprenta", a:"Disolución órdenes, supresión del diezmo, libertad de imprenta."},
+  // 2.1 Reforma agraria
+  {q:"Reforma agraria liberal: objetivos", a:"Liquidar estructuras feudales; propiedad privada; libre circulación de la tierra."},
+  {q:"Medidas agrarias clave", a:"Abolición señoríos; supresión diezmo; desamortización; desvinculación mayorazgos; privatización comunales; fin de la Mesta."},
+  {q:"Consecuencias sociales", a:"Ingresos estatales; clase propietaria; pérdida campesina → jornaleros; desigualdad."},
+  {q:"Desamortización de Mendizábal (1836)", a:"Venta de bienes eclesiásticos; financiar guerra carlista; reducir deuda; apoyo liberal urbano."},
+  // 2.2 Trienio Moderado
+  {q:"Trienio Moderado (1837–1840)", a:"Gobiernos moderados; Ley de Ayuntamientos (1840) y control municipal; regencia de Espartero tras abdicación de María Cristina."},
+  // 3 Carlismo
+  {q:"Carlismo: ideario", a:"Absolutismo, catolicismo, foralismo; lema: Dios, Patria, Rey y Fueros."},
+  {q:"Carlismo: apoyos sociales", a:"Campesinado rural, clero regular, pequeños propietarios; norte peninsular."},
+  {q:"Primera Guerra Carlista: fases", a:"1833–35: Zumalacárregui; 1835–37: Luchana y Expedición Real; 1837–39: Vergara e integración de oficiales; 1840 derrota en Morella."},
+  // 4 Regencia de Espartero
+  {q:"Regencia de Espartero (1840–1843)", a:"Autoritarismo; bombardeo de Barcelona (1842); oposición moderada y obrera; caída (1843)."},
+  // 5 Isabel II
+  {q:"Isabel II: rasgos del periodo", a:"Predominio moderado; fraude electoral; pronunciamientos militares; exclusión social; partidos: Moderado, Progresista, Demócrata, Unión Liberal."},
+  {q:"Constitución de 1845", a:"Soberanía compartida; poder regio reforzado; Senado vitalicio; sufragio censitario; religión católica oficial."},
+  {q:"Leyes clave década moderada", a:"Ayuntamientos 1845; Mon-Santillán (fiscalidad); Guardia Civil 1844; Plan Pidal 1845; Concordato 1851."},
+  {q:"Vicálvaro y Manifiesto de Manzanares (1854)", a:"Crisis del moderantismo; demanda de reformas; abre Bienio Progresista."},
+  // 5.2 Bienio
+  {q:"Bienio Progresista (1854–56): medidas", a:"Milicia Nacional, libertad de imprenta, alcaldes electivos; Madoz; Ferrocarriles."},
+  {q:"‘Constitución non nata’ (1856)", a:"Proyecto con soberanía nacional y libertades; no promulgada por golpe de O’Donnell."},
+  {q:"Conflictos sociales 1855", a:"Crisis, cólera, huelga Barcelona; tensión progresistas–demócratas."},
+  // 5.3–5.4 Unión Liberal y crisis
+  {q:"Gobierno largo de O’Donnell (1858–63)", a:"Prosperidad relativa; obras públicas; comercio con colonias; intervenciones exteriores."},
+  {q:"Crisis 1866 y represión", a:"Quiebras y paro; Noche de San Daniel (1865); San Gil (1866); deriva autoritaria."},
+  {q:"Pacto de Ostende (1866)", a:"Alianza para sufragio universal y fin de Isabel II; Prim y Serrano; adhesión unionista."},
+  {q:"La Gloriosa (1868)", a:"Pronunciamiento en Cádiz; Alcolea; huida de Isabel II; Gobierno Provisional."},
+  // Sexenio
+  {q:"Gobierno Provisional: reformas económicas", a:"Peseta (1868); arancel librecambista (1869); Ley de Minas; abolición consumos."},
+  {q:"Constitución de 1869", a:"Sufragio universal masculino; bicameralismo electivo; derechos y libertad religiosa; monarquía parlamentaria."},
+  {q:"Amadeo I (1871–73): dificultad y abdicación", a:"Sin Prim; oposición múltiple; guerras; abdicación por ‘ingobernabilidad’."},
+  {q:"Primera República (1873–74): cantonalismo", a:"Figueras, Pi y Margall, Salmerón, Castelar; cantones (Cartagena, Valencia, Sevilla, Málaga, Cádiz); golpe de Pavía."},
+  {q:"Serrano (1874) y Restauración", a:"Régimen autoritario; Sandhurst; Sagunto; Alfonso XII; proyecto de Cánovas."},
+  {q:"Fracaso del Sexenio: causas", a:"Inestabilidad, división liberal, ausencia de base social, resistencias, guerras simultáneas, crisis socioeconómica."},
+];
+
+/* MCQ: 60+ preguntas divididas por bloques y personajes */
+const mcqBloque1 = [
+  {q:"El Estatuto Real (1834) es:", opts:["Constitución con soberanía nacional","Carta otorgada por la Corona","Reglamento municipal"], correct:1},
+  {q:"Número de provincias fijado por Javier de Burgos:", opts:["50","49","47"], correct:1},
+  {q:"Estamento de Próceres:", opts:["Elegidos por sufragio directo","Nombrados por el rey y vitalicios","Elegidos por ayuntamientos"], correct:1},
+  {q:"Papel de las Cortes en el Estatuto Real:", opts:["Iniciativa legislativa propia","Función consultiva y votación de propuestas del rey","Poder de derogación de decretos"], correct:1},
+  {q:"Motín de La Granja (1836) provoca:", opts:["Regreso al absolutismo","Restablecimiento del espíritu constitucional y triunfo progresista","Disolución definitiva de Cortes"], correct:1},
+  {q:"Constitución de 1837 establece:", opts:["Soberanía compartida","Soberanía nacional y bicameralismo","Unicameralismo y sufragio universal"], correct:1},
+  {q:"Senado en 1837:", opts:["Elegido por sufragio directo universal","Nombrado por el rey","Vitalicio por sorteo"], correct:1},
+  {q:"Medida liberal económica de 1837:", opts:["Impuesto de consumos ampliado","Supresión del diezmo","Cierre de imprentas"], correct:1},
+  {q:"Objetivo principal de Mendizábal con la desamortización:", opts:["Ampliar mayorazgos","Financiar la guerra y reducir deuda","Refuerzo de fueros"], correct:1},
+  {q:"Consecuencia social de la desamortización:", opts:["Campesinado gana tierras comunales","Pérdida de comunales y jornalerización","Desaparición de burguesía"], correct:1},
+  {q:"Lema carlista:", opts:["Pan y trabajo","Dios, Patria, Rey y Fueros","Libertad, igualdad y fraternidad"], correct:1},
+  {q:"Zona fuerte del carlismo:", opts:["Andalucía occidental","Navarra y País Vasco","Madrid"], correct:1},
+  {q:"Batalla clave para Bilbao (1836):", opts:["Luchana","Somorrostro","Arlabán"], correct:0},
+  {q:"Convenio de Vergara (1839):", opts:["Restablece absolutismo","Integra oficiales carlistas y promete fueros","Elimina fueros"], correct:1},
+  {q:"Regencia de Espartero se hace impopular por:", opts:["Amnistía carlista","Bombardeo de Barcelona (1842)","Concordato con Roma"], correct:1},
+];
+
+const mcqBloque2 = [
+  {q:"Constitución de 1845:", opts:["Soberanía nacional","Soberanía compartida rey–Cortes","Sufragio universal masculino"], correct:1},
+  {q:"Senado en 1845:", opts:["Electivo","Vitalicio designado por la Corona","Por sorteo provincial"], correct:1},
+  {q:"Ley de Ayuntamientos (1845):", opts:["Autonomía municipal amplia","Control gubernamental y designación de alcaldes","Elección directa obligatoria"], correct:1},
+  {q:"Guardia Civil (1844) nace para:", opts:["Defensa exterior","Orden público rural","Censura de prensa"], correct:1},
+  {q:"Reforma Mon-Santillán:", opts:["Impulsa arancel librecambista","Reorganiza sistema tributario (propiedad, comercio, consumos)","Suprime consumos"], correct:1},
+  {q:"Plan Pidal (1845):", opts:["Reforma educativa estatal y eclesiástica","Reforma agraria","Código penal"], correct:0},
+  {q:"Concordato 1851:", opts:["Ruptura con Roma","Devuelve bienes y control educativo a la Iglesia","Declara libertad religiosa plena"], correct:1},
+  {q:"Manifiesto de Manzanares (1854):", opts:["Refuerzo moderado","Demanda de reformas y convocatoria de Cortes","Anexión de Portugal"], correct:1},
+  {q:"Bienio Progresista medidas:", opts:["Supresión de Milicia Nacional","Libertad de imprenta y alcaldes electivos","Sufragio universal masculino"], correct:1},
+  {q:"Madoz (1855) desamortiza:", opts:["Sólo bienes eclesiásticos","Eclesiásticos pendientes y comunales municipales","Mayorazgos nobiliarios"], correct:1},
+  {q:"Ley General de Ferrocarriles (1855):", opts:["Limita inversión extranjera","Expansión con capital mayormente extranjero","Elimina concesiones"], correct:1},
+  {q:"Huelga general Barcelona (1855) ligada a:", opts:["Prosperidad","Crisis y cólera","Guerra carlista"], correct:1},
+  {q:"Golpe de 1856:", opts:["Sagasta","O’Donnell","Narváez"], correct:1},
+  {q:"Gobierno largo de O’Donnell:", opts:["1858–63, obras y exterior","1844–50, Guardia Civil","1866–68, represión"], correct:0},
+  {q:"Crisis 1866 produce:", opts:["Subida salarios","Quiebras y paro; sublevación de San Gil","Expansión ferrocarril"], correct:1},
+  {q:"Pacto de Ostende (1866):", opts:["Conserva a Isabel II","Derroca a Isabel II y promueve sufragio universal masculino","Restauración borbónica"], correct:1},
+  {q:"La Gloriosa (1868):", opts:["Levanta en Cádiz, derrota en Alcolea","Asedio de Bilbao","Convenio de Vergara"], correct:0},
+];
+
+const mcqBloque3 = [
+  {q:"Peseta creada en:", opts:["1865","1868","1870"], correct:1},
+  {q:"Arancel Figuerola (1869):", opts:["Proteccionista","Librecambista","Autárquico"], correct:1},
+  {q:"Constitución 1869:", opts:["Sufragio censitario","Sufragio universal masculino y derechos amplios","Senado vitalicio designado"], correct:1},
+  {q:"Forma de gobierno 1869:", opts:["República federal","Monarquía parlamentaria","Dictadura militar"], correct:1},
+  {q:"Amadeo I llega tras:", opts:["Prim asesinado","Sandhurst","Pavía"], correct:0},
+  {q:"Oposición a Amadeo I:", opts:["Apoyo carlista y republicano","Hostilidad carlista y republicana; conspiración alfonsina","Mayoría estable"], correct:1},
+  {q:"Abdicación de Amadeo:", opts:["Por enfermedad","Por ‘ingobernabilidad’","Por derrota exterior"], correct:1},
+  {q:"Presidentes de la I República:", opts:["Prim, Serrano, Castelar","Figueras, Pi y Margall, Salmerón, Castelar","Narváez, O’Donnell, Sagasta"], correct:1},
+  {q:"Cantonalismo epicentro:", opts:["Cartagena","Bilbao","Sevilla"], correct:0},
+  {q:"Golpe de Pavía (1874):", opts:["Restablece Cortes","Disuelve Cortes, fin de la República","Promulga Constitución"], correct:1},
+  {q:"Serrano (1874) es:", opts:["Régimen democrático","Autoritario sin Cortes","Gobierno municipal"], correct:1},
+  {q:"Sandhurst y Sagunto (1874):", opts:["Convenios carlistas","Paso a Alfonso XII","Elecciones municipales"], correct:1},
+  {q:"Causas fracaso Sexenio:", opts:["Estabilidad y base social amplia","División, guerras, crisis e inestabilidad","Apoyo de Iglesia y ejército"], correct:1},
+];
+
+const mcqPersonajes = [
+  {q:"María Cristina de Borbón (regencia):", opts:["Progresista radical","Regente que apoya moderados; busca fórmula intermedia (1833–1840)","Líder carlista"], correct:1},
+  {q:"Francisco Martínez de la Rosa:", opts:["Redactor Estatuto Real (1834) moderado","General carlista","Gobernador de Cuba"], correct:0},
+  {q:"Javier de Burgos:", opts:["División provincial (49)","Concordato","Arancel Figuerola"], correct:0},
+  {q:"Juan Álvarez Mendizábal:", opts:["Desamortización eclesiástica (1836)","Arancel proteccionista","Convenio de Vergara"], correct:0},
+  {q:"Tomás de Zumalacárregui:", opts:["General liberal","General carlista; muere en 1835","Ministro de Hacienda"], correct:1},
+  {q:"Espartero:", opts:["Convenio de Vergara y regente (1840–43); Luchana","Duque de Montpensier","Republicano cantonal"], correct:0},
+  {q:"Narváez:", opts:["Líder moderado; represión","Demócrata radical","Gobernador de Filipinas"], correct:0},
+  {q:"O’Donnell:", opts:["Unión Liberal; gobierno largo; golpe 1856","Constitución 1869","Manifiesto de Manzanares"], correct:0},
+  {q:"Cánovas del Castillo:", opts:["Redacta Manifiesto de Manzanares; diseño de Restauración","Presidente cantonal Cartagena","Arancel Figuerola"], correct:0},
+  {q:"Laureano Figuerola:", opts:["Peseta y arancel librecambista","Ley de Ayuntamientos","Concordato"], correct:0},
+  {q:"Juan Prim:", opts:["Impulsa Pacto de Ostende; asesinado 1870","Regente 1840–43","General carlista"], correct:0},
+  {q:"Serrano:", opts:["Preside Gobierno Provisional y dictadura 1874","Redactor 1837","Rey de España"], correct:0},
+  {q:"Amadeo I:", opts:["Rey 1871–73; abdicación","Presidente de la I República","Alfóns XII"], correct:0},
+  {q:"Pi y Margall:", opts:["Proyecto federal; presidente en 1873","Convenio de Vergara","Minas 1868"], correct:0},
+  {q:"Castelar:", opts:["Gobierno autoritario en la República","Líder carlista","Redactor de 1845"], correct:0},
+  {q:"Pavía:", opts:["Golpe y disolución de Cortes (1874)","Convenio de Vergara","Arancel Figuerola"], correct:0},
+  {q:"Martínez Campos:", opts:["Pronunciamiento de Sagunto; Alfonso XII","Narváez","O’Donnell"], correct:0},
+  {q:"Cabrera:", opts:["General carlista, resistencia hasta Morella (1840)","General liberal","Ministro de Hacienda"], correct:0},
+  {q:"Alfonso XII:", opts:["Restauración 1874","Concordato 1851","Peseta 1868"], correct:0},
+  {q:"Sagasta:", opts:["Progresista constitucionalista (escisión en tiempos de Amadeo)","Carlista","Ayuntamiento 1845"], correct:0},
+];
+
+/* Preguntas de respuesta escrita (10) con claves */
+const writingQs = [
+  {prompt:"Explica en 3–4 líneas la naturaleza del Estatuto Real (1834).", keys:["carta otorgada","soberanía","consultivas","prerrogativas","proceres","procuradores"]},
+  {prompt:"Resume los rasgos esenciales de la Constitución de 1837.", keys:["soberanía nacional","bicameral","congreso","senado","derechos","división poderes"]},
+  {prompt:"Indica medidas de la reforma agraria liberal y una consecuencia social.", keys:["señoríos","diezmo","desamortización","mayorazgos","comunales","jornaleros"]},
+  {prompt:"Define el ideario carlista y sus apoyos sociales.", keys:["absolutismo","catolicismo","fueros","campesinos","clero","navarra"]},
+  {prompt:"Explica la impopularidad de la regencia de Espartero.", keys:["autoritarismo","bombardeo","barcelona","1842","aranceles","textil"]},
+  {prompt:"Rasgos de la Constitución de 1845 y dos leyes clave de la década moderada.", keys:["soberanía compartida","senado vitalicio","censitario","católica","ayuntamientos","guardia civil","pidal","concordato","mon-santillan"]},
+  {prompt:"Medidas económicas del Bienio Progresista y sus límites.", keys:["madoz","ferrocarriles","milicia","imprenta","crisis","huelga"]},
+  {prompt:"Causas de la Revolución de 1868 y su desenlace inmediato.", keys:["crisis","san gil","ostende","cádiz","alcolea","huida"]},
+  {prompt:"Novedades de la Constitución de 1869 y reformas de Figuerola.", keys:["sufragio universal","derechos","libertad religiosa","peseta","arancel","minas"]},
+  {prompt:"Por qué fracasa el Sexenio Democrático en 1874.", keys:["inestabilidad","división","guerras","cuba","carlista","cantonal","crisis"]},
+];
+
+/* Timeline anual */
+const timeline = [
+  {year:1833, text:"Muerte de Fernando VII; inicio guerra carlista; regencia de María Cristina."},
+  {year:1834, text:"Estatuto Real; división provincial (49); disturbios por cólera."},
+  {year:1835, text:"Muerte de Zumalacárregui en Bilbao; extensión del conflicto."},
+  {year:1836, text:"Luchana; motín de La Granja; impulso constitucional."},
+  {year:1837, text:"Constitución con soberanía nacional; derechos; bicameralismo."},
+  {year:1839, text:"Convenio de Vergara; integración de oficiales y promesas forales."},
+  {year:1840, text:"Ley de Ayuntamientos; juntas; regencia de Espartero."},
+  {year:1842, text:"Bombardeo de Barcelona por Espartero."},
+  {year:1843, text:"Caída de Espartero; Isabel II proclamada."},
+  {year:1844, text:"Guardia Civil; arranque de la Década Moderada."},
+  {year:1845, text:"Constitución moderada; Plan Pidal; reforma fiscal Mon-Santillán."},
+  {year:1851, text:"Concordato con la Santa Sede."},
+  {year:1854, text:"Vicálvaro y Manzanares; comienzo del Bienio Progresista."},
+  {year:1855, text:"Desamortización Madoz; Ley de Ferrocarriles; huelga Barcelona."},
+  {year:1856, text:"Golpe de O’Donnell; fin del Bienio; ‘non nata’."},
+  {year:1858, text:"Gobierno largo de O’Donnell (prosperidad/obras)."},
+  {year:1863, text:"Deriva represiva con Narváez; tensiones."},
+  {year:1865, text:"Noche de San Daniel: represión estudiantil."},
+  {year:1866, text:"Crisis financiera; cuartel de San Gil; Pacto de Ostende."},
+  {year:1868, text:"La Gloriosa: Cádiz–Alcolea; huida de Isabel II; peseta."},
+  {year:1869, text:"Constitución avanzada; arancel librecambista."},
+  {year:1870, text:"Asesinato de Prim; elección de Amadeo I."},
+  {year:1871, text:"Inicio del reinado de Amadeo I."},
+  {year:1872, text:"Tercera Guerra Carlista; conflictividad."},
+  {year:1873, text:"Abdicación de Amadeo; I República; cantonalismo."},
+  {year:1874, text:"Pavía; Serrano; Sandhurst; Sagunto; Alfonso XII."},
+];
+
+/* Matching constituciones */
+const constituciones = [
+  {id:"c1837", name:"Constitución de 1837"},
+  {id:"c1845", name:"Constitución de 1845"},
+  {id:"c1869", name:"Constitución de 1869"},
+];
+const constItems = [
+  {id:"i1", text:"Soberanía nacional", target:"c1837"},
+  {id:"i2", text:"Congreso censitario directo", target:"c1837"},
+  {id:"i3", text:"Senado nombrado por el rey", target:"c1837"},
+  {id:"i4", text:"Derechos e imprenta", target:"c1837"},
+
+  {id:"i5", text:"Soberanía compartida rey–Cortes", target:"c1845"},
+  {id:"i6", text:"Senado vitalicio designado por la Corona", target:"c1845"},
+  {id:"i7", text:"Religión católica única oficial", target:"c1845"},
+  {id:"i8", text:"Ley de Ayuntamientos, Guardia Civil, Plan Pidal, Concordato", target:"c1845"},
+
+  {id:"i9", text:"Sufragio universal masculino", target:"c1869"},
+  {id:"i10", text:"Bicameralismo electivo (Congreso y Senado)", target:"c1869"},
+  {id:"i11", text:"Amplia carta de derechos y libertad religiosa", target:"c1869"},
+  {id:"i12", text:"Monarquía parlamentaria; gobierno responsable", target:"c1869"},
+];
+
+/* Matching personajes con historia */
+const personajes = [
+  {id:"p1", name:"María Cristina de Borbón"},
+  {id:"p2", name:"Martínez de la Rosa"},
+  {id:"p3", name:"Javier de Burgos"},
+  {id:"p4", name:"Mendizábal"},
+  {id:"p5", name:"Zumalacárregui"},
+  {id:"p6", name:"Espartero"},
+  {id:"p7", name:"Narváez"},
+  {id:"p8", name:"O’Donnell"},
+  {id:"p9", name:"Cánovas del Castillo"},
+  {id:"p10", name:"Laureano Figuerola"},
+  {id:"p11", name:"Prim"},
+  {id:"p12", name:"Serrano"},
+];
+const historiaTargets = [
+  {id:"h1", text:"Regente (1833–1840); apoyo a moderados; transición del absolutismo al liberalismo." , match:"p1"},
+  {id:"h2", text:"Redactor del Estatuto Real (1834); liberal moderado; Cortes consultivas."       , match:"p2"},
+  {id:"h3", text:"Impulsor de la división provincial (49); base del Estado centralizado."        , match:"p3"},
+  {id:"h4", text:"Desamortización eclesiástica (1836); financiar guerra y reducir deuda."       , match:"p4"},
+  {id:"h5", text:"General carlista; victorias iniciales; muere en 1835 durante asedio de Bilbao.", match:"p5"},
+  {id:"h6", text:"General liberal; Luchana; Convenio de Vergara; regente (1840–43)."           , match:"p6"},
+  {id:"h7", text:"Líder moderado; etapa represiva; influencia en la década moderada."          , match:"p7"},
+  {id:"h8", text:"Unión Liberal; gobierno largo (1858–63); golpe 1856; exterior y obras."      , match:"p8"},
+  {id:"h9", text:"Manifiesto de Manzanares; arquitecto de la Restauración (Sandhurst/Sagunto).", match:"p9"},
+  {id:"h10", text:"Peseta (1868), arancel librecambista (1869), Ley de Minas (1868)."          , match:"p10"},
+  {id:"h11", text:"Impulsa Pacto de Ostende; líder 1868; asesinado en 1870."                    , match:"p11"},
+  {id:"h12", text:"Preside Gobierno Provisional y dictadura (1874); transición a Alfonso XII." , match:"p12"},
+];
+
+/* ===========================
+   Render Flashcards
+   =========================== */
+function renderFlashcards(){
+  const c = document.getElementById('fc-container');
+  flashcards.forEach((f,i)=>{
+    const d = document.createElement('details');
+    d.className = 'card';
+    const s = document.createElement('summary');
+    s.innerHTML = `<span class="badge">Tarjeta ${i+1}</span> ${f.q}`;
+    const p = document.createElement('p');
+    p.textContent = f.a;
+    d.appendChild(s); d.appendChild(p);
+    c.appendChild(d);
+  });
+}
+
+/* ===========================
+   Render MCQ groups
+   =========================== */
+let totalMCQ = 0;
+let scoreMCQ = 0;
+function renderMCQGroup(containerId, arr){
+  const container = document.getElementById(containerId);
+  arr.forEach((m,i)=>{
+    totalMCQ++;
+    const box = document.createElement('div');
+    box.className = 'mcq';
+    const h = document.createElement('div');
+    h.innerHTML = `<span class="badge">Test ${i+1}</span> ${m.q}`;
+    box.appendChild(h);
+    m.opts.forEach((o,j)=>{
+      const opt = document.createElement('div');
+      opt.className = 'opt';
+      opt.textContent = o;
+      opt.addEventListener('click', ()=>{
+        const answered = box.querySelector('.opt.correct, .opt.wrong');
+        if (answered) return;
+        if (j === m.correct){
+          opt.classList.add('correct'); scoreMCQ++;
+        } else {
+          opt.classList.add('wrong');
+          box.querySelectorAll('.opt')[m.correct].classList.add('correct');
+        }
+        updateMCQScore();
+      });
+      box.appendChild(opt);
+    });
+    container.appendChild(box);
+  });
+  updateMCQScore();
+}
+function updateMCQScore(){
+  document.getElementById('mcq-score').textContent = `Puntuación: ${scoreMCQ} / ${totalMCQ}`;
+}
+function resetAllMCQ(){
+  scoreMCQ = 0; totalMCQ = 0;
+  document.getElementById('mcq-bloque1').innerHTML = '';
+  document.getElementById('mcq-bloque2').innerHTML = '';
+  document.getElementById('mcq-bloque3').innerHTML = '';
+  document.getElementById('mcq-personajes').innerHTML = '';
+  renderMCQGroup('mcq-bloque1', mcqBloque1);
+  renderMCQGroup('mcq-bloque2', mcqBloque2);
+  renderMCQGroup('mcq-bloque3', mcqBloque3);
+  renderMCQGroup('mcq-personajes', mcqPersonajes);
+}
+
+/* ===========================
+   Writing questions
+   =========================== */
+function renderWriting(){
+  const c = document.getElementById('writing-list');
+  writingQs.forEach((w,i)=>{
+    const row = document.createElement('div');
+    row.className = 'q';
+    row.innerHTML = `<div><span class="badge">Escrita ${i+1}</span> ${w.prompt}</div>`;
+    const input = document.createElement('input');
+    input.type = 'text'; input.placeholder = 'Escribe tu respuesta breve aquí...';
+    input.className = 'input';
+    const btn = document.createElement('button');
+    btn.className = 'btn'; btn.textContent = 'Comprobar';
+    const feedback = document.createElement('div');
+    feedback.className = 'muted';
+    let counted = false;
+    btn.addEventListener('click', ()=>{
+      const val = input.value.toLowerCase();
+      const found = w.keys.filter(k => val.includes(k));
+      feedback.innerHTML = found.length >= Math.max(2, Math.floor(w.keys.length*0.3))
+        ? `<span class="ok">Correcto (claves detectadas: ${found.length}/${w.keys.length})</span>`
+        : `<span class="ko">Insuficiente (claves detectadas: ${found.length}/${w.keys.length})</span>`;
+      updateWritingScore(i, found.length >= Math.max(2, Math.floor(w.keys.length*0.3)), counted);
+      counted = true;
+    });
+    const wrap = document.createElement('div');
+    wrap.className = 'inputRow';
+    wrap.appendChild(input); wrap.appendChild(btn);
+    row.appendChild(wrap); row.appendChild(feedback);
+    c.appendChild(row);
+  });
+}
+let writingResults = new Array(writingQs.length).fill(false);
+function updateWritingScore(idx, pass, counted){
+  if (!counted){ writingResults[idx] = pass; }
+  const sum = writingResults.filter(Boolean).length;
+  document.getElementById('writing-score').textContent = `Respuestas correctas (claves detectadas): ${sum} / ${writingQs.length}`;
+}
+function resetWriting(){
+  writingResults = new Array(writingQs.length).fill(false);
+  document.getElementById('writing-list').innerHTML = '';
+  renderWriting();
+  updateWritingScore(-1,false,false);
+}
+
+/* ===========================
+   Timeline render
+   =========================== */
+function renderTimeline(){
+  const t = document.getElementById('timeline-list');
+  timeline.forEach(item=>{
+    const div = document.createElement('div');
+    div.className = 't-item';
+    div.innerHTML = `<div class="t-year">${item.year}</div><div class="t-body">${item.text}</div>`;
+    t.appendChild(div);
+  });
+}
+
+/* ===========================
+   Matching constituciones
+   =========================== */
+function renderConst(){
+  const dz = document.getElementById('const-dropzones');
+  const dr = document.getElementById('const-draggables');
+  constituciones.forEach(c=>{
+    const card = document.createElement('div');
+    card.className = 'q';
+    card.innerHTML = `<div class="badge">${c.name}</div>`;
+    const zone = document.createElement('div');
+    zone.className = 'dropzone';
+    zone.dataset.target = c.id;
+    zone.addEventListener('dragover', e=>e.preventDefault());
+    zone.addEventListener('drop', e=>{
+      e.preventDefault();
+      const id = e.dataTransfer.getData('text/plain');
+      const el = document.getElementById(id);
+      zone.appendChild(el);
+    });
+    card.appendChild(zone);
+    dz.appendChild(card);
+  });
+  constItems.forEach(i=>{
+    const pill = document.createElement('div');
+    pill.className = 'draggable';
+    pill.draggable = true;
+    pill.id = i.id;
+    pill.dataset.target = i.target;
+    pill.textContent = i.text;
+    pill.addEventListener('dragstart', e=>{
+      e.dataTransfer.setData('text/plain', i.id);
+    });
+    dr.appendChild(pill);
+  });
+}
+function checkConst(){
+  let ok = 0;
+  const zones = document.querySelectorAll('#const-dropzones .dropzone');
+  zones.forEach(zone=>{
+    zone.querySelectorAll('.draggable').forEach(dr=>{
+      if (dr.dataset.target === zone.dataset.target) ok++;
+    });
+  });
+  document.getElementById('const-score').textContent = `Aciertos: ${ok} / ${constItems.length}`;
+}
+function resetConst(){
+  document.getElementById('const-dropzones').innerHTML = '';
+  document.getElementById('const-draggables').innerHTML = '';
+  renderConst();
+  document.getElementById('const-score').textContent = `Aciertos: 0 / ${constItems.length}`;
+}
+
+/* ===========================
+   Matching personajes
+   =========================== */
+function renderPers(){
+  const dr = document.getElementById('pers-draggables');
+  const dz = document.getElementById('pers-dropzones');
+  personajes.forEach(p=>{
+    const pill = document.createElement('div');
+    pill.className = 'draggable';
+    pill.draggable = true;
+    pill.id = p.id;
+    pill.dataset.id = p.id;
+    pill.textContent = p.name;
+    pill.addEventListener('dragstart', e=>{
+      e.dataTransfer.setData('text/plain', p.id);
+    });
+    dr.appendChild(pill);
+  });
+  historiaTargets.forEach(h=>{
+    const card = document.createElement('div');
+    card.className = 'q';
+    card.innerHTML = `<div class="badge">Resumen</div><div>${h.text}</div>`;
+    const zone = document.createElement('div');
+    zone.className = 'dropzone';
+    zone.dataset.match = h.match;
+    zone.addEventListener('dragover', e=>e.preventDefault());
+    zone.addEventListener('drop', e=>{
+      e.preventDefault();
+      const id = e.dataTransfer.getData('text/plain');
+      const el = document.getElementById(id);
+      zone.appendChild(el);
+    });
+    card.appendChild(zone);
+    dz.appendChild(card);
+  });
+}
+function checkPers(){
+  let ok = 0, total = historiaTargets.length;
+  const zones = document.querySelectorAll('#pers-dropzones .dropzone');
+  zones.forEach(zone=>{
+    const child = zone.querySelector('.draggable');
+    if (child && child.id === zone.dataset.match) ok++;
+  });
+  document.getElementById('pers-score').textContent = `Aciertos: ${ok} / ${total}`;
+}
+function resetPers(){
+  document.getElementById('pers-draggables').innerHTML = '';
+  document.getElementById('pers-dropzones').innerHTML = '';
+  renderPers();
+  document.getElementById('pers-score').textContent = `Aciertos: 0 / ${historiaTargets.length}`;
+}
+
+/* ===========================
+   Init
+   =========================== */
+renderFlashcards();
+renderMCQGroup('mcq-bloque1', mcqBloque1);
+renderMCQGroup('mcq-bloque2', mcqBloque2);
+renderMCQGroup('mcq-bloque3', mcqBloque3);
+renderMCQGroup('mcq-personajes', mcqPersonajes);
+renderWriting();
+renderTimeline();
+renderConst();
+renderPers();
+</script>
+</body>
+</html>
